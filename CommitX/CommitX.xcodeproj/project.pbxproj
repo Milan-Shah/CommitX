@@ -7,20 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13D65B482203AB7900F8BDF1 /* CoreAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B472203AB7900F8BDF1 /* CoreAPIs.swift */; };
+		13D65B4A2203AFF200F8BDF1 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B492203AFF200F8BDF1 /* ListProtocol.swift */; };
+		13D65B4C2203AFFF00F8BDF1 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B4B2203AFFF00F8BDF1 /* ListInteractor.swift */; };
+		13D65B4E2203B00B00F8BDF1 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B4D2203B00B00F8BDF1 /* ListPresenter.swift */; };
+		13D65B502203B01B00F8BDF1 /* CommitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B4F2203B01B00F8BDF1 /* CommitsModel.swift */; };
+		13D65B522203B02500F8BDF1 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B512203B02500F8BDF1 /* ListRouter.swift */; };
+		13D65B542203B03C00F8BDF1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B532203B03C00F8BDF1 /* ListViewController.swift */; };
+		13D65B602203B6B800F8BDF1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5C2203B6A400F8BDF1 /* Realm.framework */; };
+		13D65B612203B6B800F8BDF1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5C2203B6A400F8BDF1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13D65B622203B6B800F8BDF1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */; };
+		13D65B632203B6B800F8BDF1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13E8D0FA2201215F009C0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D0F92201215F009C0F2E /* AppDelegate.swift */; };
-		13E8D0FC2201215F009C0F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D0FB2201215F009C0F2E /* ViewController.swift */; };
 		13E8D0FF2201215F009C0F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E8D0FD2201215F009C0F2E /* Main.storyboard */; };
 		13E8D10122012161009C0F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E8D10022012161009C0F2E /* Assets.xcassets */; };
 		13E8D10422012161009C0F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E8D10222012161009C0F2E /* LaunchScreen.storyboard */; };
 		13E8D10D220127CB009C0F2E /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D10C220127CB009C0F2E /* ProgressIndicator.swift */; };
 		13E8D110220128BD009C0F2E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D10F220128BD009C0F2E /* Utility.swift */; };
 		13E8D1132201E16B009C0F2E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D1122201E16B009C0F2E /* Extensions.swift */; };
+		A73330DE2694DE07BAEBFE53 /* Pods_CommitX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2358F0F31CE65FC1EFED4920 /* Pods_CommitX.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		13D65B642203B6B800F8BDF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13D65B632203B6B800F8BDF1 /* RealmSwift.framework in Embed Frameworks */,
+				13D65B612203B6B800F8BDF1 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		13D65B472203AB7900F8BDF1 /* CoreAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIs.swift; sourceTree = "<group>"; };
+		13D65B492203AFF200F8BDF1 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
+		13D65B4B2203AFFF00F8BDF1 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		13D65B4D2203B00B00F8BDF1 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		13D65B4F2203B01B00F8BDF1 /* CommitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsModel.swift; sourceTree = "<group>"; };
+		13D65B512203B02500F8BDF1 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		13D65B532203B03C00F8BDF1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		13D65B5C2203B6A400F8BDF1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		13E8D0F62201215F009C0F2E /* CommitX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E8D0F92201215F009C0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13E8D0FB2201215F009C0F2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13E8D0FE2201215F009C0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13E8D10022012161009C0F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13E8D10322012161009C0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +62,9 @@
 		13E8D10C220127CB009C0F2E /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		13E8D10F220128BD009C0F2E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		13E8D1122201E16B009C0F2E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2358F0F31CE65FC1EFED4920 /* Pods_CommitX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommitX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28847211F498B7D0A7F203F8 /* Pods-CommitX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommitX/Pods-CommitX.release.xcconfig"; sourceTree = "<group>"; };
+		32F3CAC37EA029595FEDA7B6 /* Pods-CommitX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommitX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommitX/Pods-CommitX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +72,91 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D65B602203B6B800F8BDF1 /* Realm.framework in Frameworks */,
+				A73330DE2694DE07BAEBFE53 /* Pods_CommitX.framework in Frameworks */,
+				13D65B622203B6B800F8BDF1 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13D65B452203A82500F8BDF1 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B472203AB7900F8BDF1 /* CoreAPIs.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		13D65B462203AB6000F8BDF1 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B5B2203B0DB00F8BDF1 /* Protocol */,
+				13D65B572203B0B100F8BDF1 /* Entity */,
+				13D65B592203B0C000F8BDF1 /* Interactor */,
+				13D65B562203B0AB00F8BDF1 /* Router */,
+				13D65B582203B0B900F8BDF1 /* Presenter */,
+				13D65B552203B05E00F8BDF1 /* View */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		13D65B552203B05E00F8BDF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B532203B03C00F8BDF1 /* ListViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		13D65B562203B0AB00F8BDF1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B512203B02500F8BDF1 /* ListRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		13D65B572203B0B100F8BDF1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B4F2203B01B00F8BDF1 /* CommitsModel.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		13D65B582203B0B900F8BDF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B4D2203B00B00F8BDF1 /* ListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		13D65B592203B0C000F8BDF1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B4B2203AFFF00F8BDF1 /* ListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		13D65B5B2203B0DB00F8BDF1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B492203AFF200F8BDF1 /* ListProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 		13E8D0ED2201215F009C0F2E = {
 			isa = PBXGroup;
 			children = (
 				13E8D0F82201215F009C0F2E /* CommitX */,
 				13E8D0F72201215F009C0F2E /* Products */,
+				40FFC9AD731ED37625CF24C0 /* Pods */,
+				4CD2BC51815896573F2EC1BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,9 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				13E8D0F92201215F009C0F2E /* AppDelegate.swift */,
-				13E8D0FB2201215F009C0F2E /* ViewController.swift */,
+				13D65B462203AB6000F8BDF1 /* Viper */,
+				13D65B452203A82500F8BDF1 /* APIs */,
 				13E8D1112201E156009C0F2E /* Extensions */,
-				13E8D10E220128A2009C0F2E /* App Utility */,
+				13E8D10E220128A2009C0F2E /* Helper */,
 				13E8D10B22012791009C0F2E /* Progress Indicator */,
 				13E8D0FD2201215F009C0F2E /* Main.storyboard */,
 				13E8D10022012161009C0F2E /* Assets.xcassets */,
@@ -81,12 +193,12 @@
 			path = "Progress Indicator";
 			sourceTree = "<group>";
 		};
-		13E8D10E220128A2009C0F2E /* App Utility */ = {
+		13E8D10E220128A2009C0F2E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				13E8D10F220128BD009C0F2E /* Utility.swift */,
 			);
-			path = "App Utility";
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		13E8D1112201E156009C0F2E /* Extensions */ = {
@@ -97,6 +209,25 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		40FFC9AD731ED37625CF24C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32F3CAC37EA029595FEDA7B6 /* Pods-CommitX.debug.xcconfig */,
+				28847211F498B7D0A7F203F8 /* Pods-CommitX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CD2BC51815896573F2EC1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13D65B5C2203B6A400F8BDF1 /* Realm.framework */,
+				13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */,
+				2358F0F31CE65FC1EFED4920 /* Pods_CommitX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13E8D10822012161009C0F2E /* Build configuration list for PBXNativeTarget "CommitX" */;
 			buildPhases = (
+				141D87D7971760A441CE2AF3 /* [CP] Check Pods Manifest.lock */,
 				13E8D0F22201215F009C0F2E /* Sources */,
 				13E8D0F32201215F009C0F2E /* Frameworks */,
 				13E8D0F42201215F009C0F2E /* Resources */,
+				879A090F516ED3952D342D77 /* [CP] Embed Pods Frameworks */,
+				13D65B642203B6B800F8BDF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,15 +297,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		141D87D7971760A441CE2AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommitX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879A090F516ED3952D342D77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CommitX/Pods-CommitX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommitX/Pods-CommitX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13E8D0F22201215F009C0F2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				13E8D1132201E16B009C0F2E /* Extensions.swift in Sources */,
+				13D65B502203B01B00F8BDF1 /* CommitsModel.swift in Sources */,
 				13E8D110220128BD009C0F2E /* Utility.swift in Sources */,
-				13E8D0FC2201215F009C0F2E /* ViewController.swift in Sources */,
+				13D65B4E2203B00B00F8BDF1 /* ListPresenter.swift in Sources */,
+				13D65B482203AB7900F8BDF1 /* CoreAPIs.swift in Sources */,
+				13D65B542203B03C00F8BDF1 /* ListViewController.swift in Sources */,
+				13D65B4C2203AFFF00F8BDF1 /* ListInteractor.swift in Sources */,
+				13D65B4A2203AFF200F8BDF1 /* ListProtocol.swift in Sources */,
 				13E8D10D220127CB009C0F2E /* ProgressIndicator.swift in Sources */,
+				13D65B522203B02500F8BDF1 /* ListRouter.swift in Sources */,
 				13E8D0FA2201215F009C0F2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,10 +509,15 @@
 		};
 		13E8D10922012161009C0F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F3CAC37EA029595FEDA7B6 /* Pods-CommitX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74HSQUHB8D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CommitX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,10 +532,15 @@
 		};
 		13E8D10A22012161009C0F2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28847211F498B7D0A7F203F8 /* Pods-CommitX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74HSQUHB8D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CommitX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

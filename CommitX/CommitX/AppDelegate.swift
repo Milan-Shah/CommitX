@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Getting Commits List View module
+        let commitsList = ListRouter.createModule()
+        
+        // Instantiating instance of UINavigationController with Contacts List View module
+        let commitsNav = UINavigationController()
+        commitsNav.viewControllers = [commitsList]
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = commitsNav
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

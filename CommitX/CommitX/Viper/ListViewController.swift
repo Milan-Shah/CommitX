@@ -93,7 +93,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    /*
+    /* // Opening URL on selecting cell - commenting out because it's not taking to useful URL
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let selectedCommit = commits?[indexPath.row] {

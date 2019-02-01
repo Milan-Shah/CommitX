@@ -22,7 +22,7 @@ class CommitsModel: Object, Decodable {
         return "node_id"
     }
     
-    private enum ContactsCodingKeys: String, CodingKey {
+    private enum CommitCodingKeys: String, CodingKey {
         case node_id
         case url
         case commit, author, name, date
@@ -39,19 +39,19 @@ class CommitsModel: Object, Decodable {
     }
     
     convenience required init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: ContactsCodingKeys.self)
+        let values = try decoder.container(keyedBy: CommitCodingKeys.self)
         
         let node_id = try values.decode(String.self, forKey: .node_id)
         let url = try values.decode(String.self, forKey: .url)
         
         // Commits
-        let commit = try values.nestedContainer(keyedBy: ContactsCodingKeys.self, forKey: .commit)
+        let commit = try values.nestedContainer(keyedBy: CommitCodingKeys.self, forKey: .commit)
         
         // Message
         let message = try commit.decode(String.self, forKey: .message)
         
         // Author - name - email - date
-        let author = try commit.nestedContainer(keyedBy: ContactsCodingKeys.self, forKey: .author)
+        let author = try commit.nestedContainer(keyedBy: CommitCodingKeys.self, forKey: .author)
         let name = try author.decode(String.self, forKey: .name)
         let date = try author.decode(String.self, forKey: .date)
         

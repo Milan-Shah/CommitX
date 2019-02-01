@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "336E672A2C23127B20810E4D4768E8F9"
+               BlueprintIdentifier = "B0DA777F18272CD31D0761A810827E4A"
                BuildableName = "Pods_CommitX.framework"
                BlueprintName = "Pods-CommitX"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "336E672A2C23127B20810E4D4768E8F9"
+            BlueprintIdentifier = "B0DA777F18272CD31D0761A810827E4A"
             BuildableName = "Pods_CommitX.framework"
             BlueprintName = "Pods-CommitX"
             ReferencedContainer = "container:Pods.xcodeproj">

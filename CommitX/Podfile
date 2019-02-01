@@ -9,6 +9,4 @@ target 'CommitX' do
     pod 'Alamofire', '~> 4.7'
     pod 'AlamofireImage', '~> 3.5'
     pod 'AlamofireObjectMapper', '~> 5.2'
-    pod 'RealmSwift'
-
 end

@@ -7,3 +7,29 @@
 //
 
 import Foundation
+import UIKit
+import RealmSwift
+
+class ListPresenter: ListViewToPresenterProtocol {
+
+    var view: ListPresenterToViewProtocol?
+    var interactor: ListPresenterToInteractorProtocol?
+    var router: ListPresenterToRouterProtocol?
+    var dataManager: ListInteractorToDataManagerProtocol?
+    
+    func startFetchingCommits() {
+        interactor?.fetchCommits()
+    }
+}
+
+extension ListPresenter: ListInteractorToPresenterProtocol {
+    
+    func fetchedCommitSuccess(_ commits: [CommitsModel]) {
+        view?.showCommits(commits)
+    }
+    
+    func fetchCommitsFailed() {
+        view?.showError()
+    }
+    
+}

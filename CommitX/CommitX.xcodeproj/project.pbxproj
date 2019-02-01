@@ -14,6 +14,10 @@
 		13D65B502203B01B00F8BDF1 /* CommitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B4F2203B01B00F8BDF1 /* CommitsModel.swift */; };
 		13D65B522203B02500F8BDF1 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B512203B02500F8BDF1 /* ListRouter.swift */; };
 		13D65B542203B03C00F8BDF1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D65B532203B03C00F8BDF1 /* ListViewController.swift */; };
+		13D65B602203B6B800F8BDF1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5C2203B6A400F8BDF1 /* Realm.framework */; };
+		13D65B612203B6B800F8BDF1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5C2203B6A400F8BDF1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13D65B622203B6B800F8BDF1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */; };
+		13D65B632203B6B800F8BDF1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13E8D0FA2201215F009C0F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D0F92201215F009C0F2E /* AppDelegate.swift */; };
 		13E8D0FF2201215F009C0F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13E8D0FD2201215F009C0F2E /* Main.storyboard */; };
 		13E8D10122012161009C0F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E8D10022012161009C0F2E /* Assets.xcassets */; };
@@ -24,6 +28,21 @@
 		A73330DE2694DE07BAEBFE53 /* Pods_CommitX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2358F0F31CE65FC1EFED4920 /* Pods_CommitX.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		13D65B642203B6B800F8BDF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13D65B632203B6B800F8BDF1 /* RealmSwift.framework in Embed Frameworks */,
+				13D65B612203B6B800F8BDF1 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13D65B472203AB7900F8BDF1 /* CoreAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIs.swift; sourceTree = "<group>"; };
 		13D65B492203AFF200F8BDF1 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
@@ -32,6 +51,8 @@
 		13D65B4F2203B01B00F8BDF1 /* CommitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsModel.swift; sourceTree = "<group>"; };
 		13D65B512203B02500F8BDF1 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		13D65B532203B03C00F8BDF1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		13D65B5C2203B6A400F8BDF1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		13E8D0F62201215F009C0F2E /* CommitX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E8D0F92201215F009C0F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13E8D0FE2201215F009C0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D65B602203B6B800F8BDF1 /* Realm.framework in Frameworks */,
 				A73330DE2694DE07BAEBFE53 /* Pods_CommitX.framework in Frameworks */,
+				13D65B622203B6B800F8BDF1 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				13D65B5B2203B0DB00F8BDF1 /* Protocol */,
-				13D65B592203B0C000F8BDF1 /* Interactor */,
-				13D65B582203B0B900F8BDF1 /* Presenter */,
 				13D65B572203B0B100F8BDF1 /* Entity */,
+				13D65B592203B0C000F8BDF1 /* Interactor */,
 				13D65B562203B0AB00F8BDF1 /* Router */,
+				13D65B582203B0B900F8BDF1 /* Presenter */,
 				13D65B552203B05E00F8BDF1 /* View */,
 			);
 			path = Viper;
@@ -198,6 +221,8 @@
 		4CD2BC51815896573F2EC1BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13D65B5C2203B6A400F8BDF1 /* Realm.framework */,
+				13D65B5D2203B6A400F8BDF1 /* RealmSwift.framework */,
 				2358F0F31CE65FC1EFED4920 /* Pods_CommitX.framework */,
 			);
 			name = Frameworks;
@@ -215,6 +240,7 @@
 				13E8D0F32201215F009C0F2E /* Frameworks */,
 				13E8D0F42201215F009C0F2E /* Resources */,
 				879A090F516ED3952D342D77 /* [CP] Embed Pods Frameworks */,
+				13D65B642203B6B800F8BDF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,8 +333,6 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -318,8 +342,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,6 +514,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74HSQUHB8D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CommitX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,6 +537,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74HSQUHB8D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CommitX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

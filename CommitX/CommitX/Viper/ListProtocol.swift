@@ -29,7 +29,6 @@ protocol ListPresenterToRouterProtocol: class {
 
 protocol ListPresenterToInteractorProtocol: class {
     var presenter:ListInteractorToPresenterProtocol? { get set }
-    var dataManager: ListInteractorToDataManagerProtocol? { get set }
     func fetchCommits()
 }
 
@@ -38,7 +37,3 @@ protocol ListInteractorToPresenterProtocol {
     func fetchCommitsFailed()
 }
 
-protocol ListInteractorToDataManagerProtocol {
-    func retrieveSavedCommits() -> [CommitsModel]?
-    func saveFetchedContacts(commits: [CommitsModel])
-}

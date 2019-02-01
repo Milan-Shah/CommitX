@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Getting Commits List View module
         let commitsList = ListRouter.createModule()
         
-        // Instantiating instance of UINavigationController with Contacts List View module
+        // Instantiating instance of UINavigationController with Commit List View module
         let commitsNav = UINavigationController()
         commitsNav.viewControllers = [commitsList]
         

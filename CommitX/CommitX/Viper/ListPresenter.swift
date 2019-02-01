@@ -15,7 +15,6 @@ class ListPresenter: ListViewToPresenterProtocol {
     var view: ListPresenterToViewProtocol?
     var interactor: ListPresenterToInteractorProtocol?
     var router: ListPresenterToRouterProtocol?
-    var dataManager: ListInteractorToDataManagerProtocol?
     
     func startFetchingCommits() {
         interactor?.fetchCommits()

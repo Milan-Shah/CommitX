@@ -14,8 +14,7 @@ import Realm
 class ListInteractor: ListPresenterToInteractorProtocol {
     
     var presenter: ListInteractorToPresenterProtocol?
-    var dataManager: ListInteractorToDataManagerProtocol?
-    
+
     func fetchCommits() {
         
         if let savedCommits = self.retrieveSavedCommits() {
